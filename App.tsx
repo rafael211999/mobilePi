@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Card from './src/components/card/Card';
+import InputData from './src/components/inputData/inputData';
 
 export default function App() {
   return (
@@ -10,12 +11,7 @@ export default function App() {
           <StatusBar />
           <Text>Rafael Alves de souza</Text>
           <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <InputData />
         </ScrollView>
       </SafeAreaView>
     </>
@@ -24,7 +20,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     paddingTop: 50,
     paddingBottom: 50,
