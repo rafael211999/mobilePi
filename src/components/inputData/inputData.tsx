@@ -12,7 +12,6 @@ export default function InputData() {
             </Text>
             {/* Aqui eu estou criando um input e pegando o valor dele */}
             <TextInput value={inputValue} onChangeText={text => setInputValue(text)} style = {styles.setText}></TextInput>
-
             {/* Aqui eu estou imprimindo na tela o valor que está sendo digitado no meu input */}
             <Text>{inputValue}</Text>
         </View>
@@ -22,8 +21,8 @@ export default function InputData() {
 const styles = StyleSheet.create({
     setText: {
         fontSize: 16,
-        backgroudColor: '#808040',
-        elevation: 25,
+        backgroudColor: '#e09c00',
+        elevation: 1,
         borderRadius: 45,
     },
 
