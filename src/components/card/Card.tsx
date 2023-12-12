@@ -9,10 +9,10 @@ type Props = {
 
 export default function Card({ data, ...rest }: Props) {
   return (
-    <View style={styles.card}>
+    <View >
       {data.map((item) => {
         return (
-          <View>
+          <View style={styles.card}>
             <Text>{item.name}</Text>
           </View>
         )
@@ -23,8 +23,8 @@ export default function Card({ data, ...rest }: Props) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#9d9d9d',
-    padding: 40,
+    backgroundColor: '#72577c',
+    paddingVertical: 40,
     color: "black",
     borderRadius: 25,
     margin: 10,

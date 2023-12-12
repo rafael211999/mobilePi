@@ -1,10 +1,7 @@
 export { };
 
 declare global {
-    // Declare module for PNG files
     module '*.png';
-
-    // Declare module for JPG files
     module '*.jpg';
 
     type PokemonType = {

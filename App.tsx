@@ -28,19 +28,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'> 
-      <Stack.Screen name='Home' component={Home} />
+      <Stack.Screen name='Home' component={Home} options={{headerShown : false}}/>
       <Stack.Screen name='Teste' component={Teste} />
       <Stack.Screen name='Teste2' component={Teste2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-  },
-});

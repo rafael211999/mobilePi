@@ -18,11 +18,12 @@ export default function Btn(){
 const styles =  StyleSheet.create({
     btnText: {
         display:"flex",
+        flex: 1,
         backgroundColor: "red",
-        padding: 25,
-        margin: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
+        marginHorizontal: 80,
+        marginVertical: 15,
+        paddingHorizontal: 10,
+        paddingVertical: 20,
         borderRadius: 25,
         alignItems: "center",
         justifyContent:"center",
