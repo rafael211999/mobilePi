@@ -23,7 +23,7 @@ export default function Card({ data, ...rest }: Props) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#72577c',
+    backgroundColor: '#edbe71',
     paddingVertical: 40,
     color: "black",
     borderRadius: 25,

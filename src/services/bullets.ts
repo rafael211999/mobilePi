@@ -6,10 +6,13 @@ const bullets =
             name: "Primeiro"
         },
         {
-            name: "Primeiro"
+            name: "Segundo"
         },
         {
-            name: "Primeiro"
+            name: "Terceiro"
+        },
+        {
+            name: "Quarto"
         },
     ]
 

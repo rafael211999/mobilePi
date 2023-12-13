@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View } from "react-native";
 import { useState } from "react";
 import { TextInput } from "react-native";
+import { AntDesign } from '@expo/vector-icons'; 
 
 export default function SearchBar(){
     const [inputValue, setInputValue] = useState('');
@@ -9,13 +10,12 @@ export default function SearchBar(){
         <View style={styles.inputPesquisa}>
             {/* Aqui eu estou criando um input e pegando o valor dele */}
             <TextInput value={inputValue} placeholder="Pesquisa" onChangeText={text => setInputValue(text)} ></TextInput>
-            <Text>Icone</Text>
+            <AntDesign name="search1" size={24} color="black" />
         </View>
     )
 }
 const styles = StyleSheet.create({
     inputPesquisa: {
-        color: 'tomato',
         display:"flex",
         flexDirection: "row",
         justifyContent: "space-between",

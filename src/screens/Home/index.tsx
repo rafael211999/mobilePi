@@ -4,12 +4,16 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { useNavigation, NavigationProp } from '@react-navigation/native'
 import { useEffect, useState } from 'react';
 import { getAllPokemon } from '../../controllers/pokemonController';
+import { Image } from 'react-native';
+import Carrossel from '../../components/carrossel/Carrossel';
 import Btn from '../../components/btn/Btn';
 import InputData from '../../components/inputData/InputData';
 import Teste from '../Teste';
 import Card from '../../components/card/Card';
 import Header from '../../components/header/Header';
 import SearchBar from '../../components/searchbar/SearchBar';
+import Bullets from '../../components/bullets/Bullets';
+
 
 
 export default function Home() {
@@ -27,14 +31,17 @@ export default function Home() {
 
         <ScrollView style={styles.scrollContainer}>
             <Header />
+            <ScrollView horizontal={true}>
+                <Bullets />
+            </ScrollView>
+            
             <View style={styles.viewContainer}>
-                
-                {/* <InputData /> */}
-                <Btn />
+                <Carrossel data={pokemons} />
+                {/* <Card data={pokemons} /> */}
                 <TouchableOpacity style={styles.btnText} onPress={() => navigate('Teste')}>
                     <Text>Ir para a tela teste</Text>
                 </TouchableOpacity>
-                <Card data={pokemons} />
+                <Btn />
             </View>
         </ScrollView>
 
@@ -43,14 +50,6 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#9e064a',
-        display: 'flex',
-
-    },
-    statusbar: {
-
-    },
     safeAreaContainer: {
         display: "flex",
         flex: 1,
@@ -58,10 +57,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     scrollContainer: {
-        backgroundColor: '#9e064a',
+        backgroundColor: '#f03813',
     },
     btnText: {
-        display:"flex",
+        display: "flex",
         flex: 1,
         backgroundColor: "red",
         marginHorizontal: 80,
@@ -70,13 +69,13 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
         borderRadius: 25,
         alignItems: "center",
-        justifyContent:"center",
+        justifyContent: "center",
 
     },
     viewContainer: {
         paddingLeft: 15,
         paddingRight: 15,
-        backgroundColor: '#cee1d8',
+        backgroundColor: '#f03813',
     }
 });
 
