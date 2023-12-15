@@ -3,6 +3,7 @@
     "name": "pi",
     "slug": "pi",
     "version": "1.0.0",
+    "versionCode": "0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,10 +22,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rafael22.pi"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00ae17d3-719c-4bb8-8583-5fea105b4767"
+      }
     }
   }
 }

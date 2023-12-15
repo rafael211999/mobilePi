@@ -4,7 +4,6 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { useNavigation, NavigationProp } from '@react-navigation/native'
 import { useEffect, useState } from 'react';
 import { getAllPokemon } from '../../controllers/pokemonController';
-import { Image } from 'react-native';
 import Carrossel from '../../components/carrossel/Carrossel';
 import Btn from '../../components/btn/Btn';
 import InputData from '../../components/inputData/InputData';
@@ -34,7 +33,6 @@ export default function Home() {
             <ScrollView horizontal={true}>
                 <Bullets />
             </ScrollView>
-            
             <View style={styles.viewContainer}>
                 <Carrossel data={pokemons} />
                 {/* <Card data={pokemons} /> */}

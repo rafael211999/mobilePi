@@ -17,4 +17,6 @@ declare global {
         url: string;
         types?: PokemonType[];
     };
+
+    
 }
